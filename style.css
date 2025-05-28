@@ -10,6 +10,8 @@ body{
     font-family: Arial, sans-serif;
     background-color: #B8E7FA;
 }
+
+/*start header section*/
 header{
     background-color: white;
     padding: 15px;
@@ -40,6 +42,7 @@ nav{
 .download:hover{
     box-shadow: 0 0 10px rgba(131, 126, 126, 0.5);
 }
+
 /*start hero section*/
 .hero{
     margin: 0 auto;
@@ -81,6 +84,8 @@ nav{
 .hero-content p{
     color: rgb(97, 95, 95);
 }
+
+
 .connect{
      background: linear-gradient(90deg, #FF6B6B, #FFD93D);
             color: white;
@@ -96,6 +101,8 @@ nav{
 .connect:hover{
      box-shadow: 0 0 10px rgba(131, 126, 126, 0.5);
 }
+
+/*start development section*/
 
 .develop-content{
     align-items: center;
@@ -160,8 +167,13 @@ nav{
 .dev-btn:hover{
     box-shadow: 0 0 10px rgba(131, 126, 126, 0.5);
 }
+.card-right img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
 
-
+/*start inspiration section*/
 .inspiration{
     margin: 0 auto;
     padding: 2rem;
@@ -178,14 +190,39 @@ nav{
     color: rgb(97, 95, 95);
 }
 #video{
- background-color: #b9e3fd;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  padding: 20px;
-  max-width: 800px;
-  margin: auto;
+    background-color: #b9e3fd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+   
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    min-height: 500px;
+    align-items: center;
+    margin-top: 2rem;
+
 
 }
+.video-responsive {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+.video-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    border: none;
+}
+
+/*start target section*/
 .target{
     padding-top: 4rem;
     padding-bottom: 8rem;
@@ -228,6 +265,7 @@ nav{
     box-shadow: 0 0 10px rgba(87, 87, 87, 0.5);
 }
 
+/*start footer section*/
 footer{
     background-color: white;
     display: flex;
@@ -244,5 +282,125 @@ footer h3{
     padding-right: 1rem;
 }
 
+.social-icon img:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
 
-
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .logo {
+        margin-bottom: 1rem;
+    }
+    .hero {
+        padding: 2rem;
+    }
+    .hero-card {
+        width: 100%;
+        padding: 1rem;
+    }
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    .hero-content p {
+        font-size: 1rem;
+    }
+    .connect {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+    .development {
+        padding: 2rem 0;
+    }
+    .develop-content{
+        padding: 1rem;
+    }
+    .dev-card {
+        flex-direction: column;
+        width: 100%;
+        padding: 1rem;
+    }
+    .card-left-content h2 {
+        font-size: 1.5rem;
+    }
+    .card-left-content p {
+        font-size: 0.9rem;
+    }
+    .card-left-content button {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+    .inspiration {
+        padding: 1rem;
+    }
+    .ins-content h1 {
+        font-size: 1.5rem;
+    }
+    .ins-content p {
+        font-size: 0.9rem;
+    }
+    #video {
+        width: 100%;
+        padding: 1rem;
+    }
+    .target {
+        padding: 2rem 0;
+    }
+    .target-content h1 {
+        font-size: 2rem;
+    }
+    .target-content p {
+        font-size: 0.9rem;
+    }
+    .target-cards {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .cards {
+        width: 18rem;
+        height: 18rem;
+        padding: 1rem;
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    footer h3 {
+        margin-bottom: 1rem;
+    }
+    .social-icon {
+        margin-bottom: 1rem;
+    }
+    .social-icon img {
+        padding-right: 0.5rem;
+    }
+    .download {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+    .download:hover {
+        box-shadow: 0 0 8px rgba(131, 126, 126, 0.5);
+    }
+    .connect {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+    .connect:hover {
+        box-shadow: 0 0 8px rgba(131, 126, 126, 0.5);
+    }
+    .dev-btn {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+    .dev-btn:hover {
+        box-shadow: 0 0 8px rgba(131, 126, 126, 0.5);
+    }
+    .hero-img img {
+        width: 100%;
+        height: auto;
+    }
+}
